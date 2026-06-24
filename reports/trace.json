@@ -1,0 +1,71 @@
+{
+  "query": "Research GraphRAG state-of-the-art and write a 500-word summary",
+  "trace": [
+    {
+      "name": "supervisor.route",
+      "payload": {
+        "route": "researcher",
+        "iteration": 1,
+        "duration_seconds": null
+      }
+    },
+    {
+      "name": "researcher.run",
+      "payload": {
+        "sources": 5,
+        "input_tokens": 749,
+        "output_tokens": 620,
+        "cost_usd": 0.00048435,
+        "duration_seconds": 10.961921599999187
+      }
+    },
+    {
+      "name": "supervisor.route",
+      "payload": {
+        "route": "analyst",
+        "iteration": 2,
+        "duration_seconds": null
+      }
+    },
+    {
+      "name": "analyst.run",
+      "payload": {
+        "input_tokens": 673,
+        "output_tokens": 827,
+        "cost_usd": 0.0005971500000000001,
+        "duration_seconds": 13.671760500001255
+      }
+    },
+    {
+      "name": "supervisor.route",
+      "payload": {
+        "route": "writer",
+        "iteration": 3,
+        "duration_seconds": null
+      }
+    },
+    {
+      "name": "writer.run",
+      "payload": {
+        "input_tokens": 1056,
+        "output_tokens": 904,
+        "cost_usd": 0.0007007999999999999,
+        "duration_seconds": 13.715138899999147
+      }
+    },
+    {
+      "name": "supervisor.route",
+      "payload": {
+        "route": "done",
+        "iteration": 4,
+        "duration_seconds": null
+      }
+    }
+  ],
+  "route_history": [
+    "researcher",
+    "analyst",
+    "writer",
+    "done"
+  ]
+}

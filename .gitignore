@@ -9,5 +9,12 @@ dist/
 build/
 *.egg-info/
 reports/*.json
+!reports/benchmark_traces.json
+!reports/trace.json
 reports/*.md
+!reports/benchmark_report.md
+!reports/trace_summary.md
+!reports/failure_modes.md
+reports/*.png
+!reports/trace_summary_screenshot.png
 !.gitkeep

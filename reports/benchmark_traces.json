@@ -1,0 +1,275 @@
+[
+  {
+    "run_name": "baseline-q1",
+    "query": "Research GraphRAG state-of-the-art and write a 500-word summary",
+    "route_history": [],
+    "errors": [],
+    "trace": [
+      {
+        "name": "baseline.complete",
+        "payload": {
+          "latency_seconds": 12.289022999997542,
+          "input_tokens": 49,
+          "output_tokens": 707,
+          "cost_usd": 0.00043154999999999995,
+          "model": "gpt-4o-mini"
+        }
+      }
+    ]
+  },
+  {
+    "run_name": "multi-agent-q1",
+    "query": "Research GraphRAG state-of-the-art and write a 500-word summary",
+    "route_history": [
+      "researcher",
+      "analyst",
+      "writer",
+      "done"
+    ],
+    "errors": [],
+    "trace": [
+      {
+        "name": "supervisor.route",
+        "payload": {
+          "route": "researcher",
+          "iteration": 1,
+          "duration_seconds": null
+        }
+      },
+      {
+        "name": "researcher.run",
+        "payload": {
+          "sources": 5,
+          "input_tokens": 749,
+          "output_tokens": 761,
+          "cost_usd": 0.0005689499999999999,
+          "duration_seconds": 13.585973900000681
+        }
+      },
+      {
+        "name": "supervisor.route",
+        "payload": {
+          "route": "analyst",
+          "iteration": 2,
+          "duration_seconds": null
+        }
+      },
+      {
+        "name": "analyst.run",
+        "payload": {
+          "input_tokens": 814,
+          "output_tokens": 806,
+          "cost_usd": 0.0006057,
+          "duration_seconds": 14.47941329999594
+        }
+      },
+      {
+        "name": "supervisor.route",
+        "payload": {
+          "route": "writer",
+          "iteration": 3,
+          "duration_seconds": null
+        }
+      },
+      {
+        "name": "writer.run",
+        "payload": {
+          "input_tokens": 1035,
+          "output_tokens": 919,
+          "cost_usd": 0.00070665,
+          "duration_seconds": 9.85391399999935
+        }
+      },
+      {
+        "name": "supervisor.route",
+        "payload": {
+          "route": "done",
+          "iteration": 4,
+          "duration_seconds": null
+        }
+      }
+    ]
+  },
+  {
+    "run_name": "baseline-q2",
+    "query": "Compare single-agent and multi-agent workflows for customer support",
+    "route_history": [],
+    "errors": [],
+    "trace": [
+      {
+        "name": "baseline.complete",
+        "payload": {
+          "latency_seconds": 10.7663950999995,
+          "input_tokens": 44,
+          "output_tokens": 725,
+          "cost_usd": 0.0004416,
+          "model": "gpt-4o-mini"
+        }
+      }
+    ]
+  },
+  {
+    "run_name": "multi-agent-q2",
+    "query": "Compare single-agent and multi-agent workflows for customer support",
+    "route_history": [
+      "researcher",
+      "analyst",
+      "writer",
+      "done"
+    ],
+    "errors": [],
+    "trace": [
+      {
+        "name": "supervisor.route",
+        "payload": {
+          "route": "researcher",
+          "iteration": 1,
+          "duration_seconds": null
+        }
+      },
+      {
+        "name": "researcher.run",
+        "payload": {
+          "sources": 5,
+          "input_tokens": 687,
+          "output_tokens": 572,
+          "cost_usd": 0.00044625,
+          "duration_seconds": 11.474995700002182
+        }
+      },
+      {
+        "name": "supervisor.route",
+        "payload": {
+          "route": "analyst",
+          "iteration": 2,
+          "duration_seconds": null
+        }
+      },
+      {
+        "name": "analyst.run",
+        "payload": {
+          "input_tokens": 620,
+          "output_tokens": 620,
+          "cost_usd": 0.00046499999999999997,
+          "duration_seconds": 9.094293499998457
+        }
+      },
+      {
+        "name": "supervisor.route",
+        "payload": {
+          "route": "writer",
+          "iteration": 3,
+          "duration_seconds": null
+        }
+      },
+      {
+        "name": "writer.run",
+        "payload": {
+          "input_tokens": 884,
+          "output_tokens": 915,
+          "cost_usd": 0.0006816,
+          "duration_seconds": 13.692218799995317
+        }
+      },
+      {
+        "name": "supervisor.route",
+        "payload": {
+          "route": "done",
+          "iteration": 4,
+          "duration_seconds": null
+        }
+      }
+    ]
+  },
+  {
+    "run_name": "baseline-q3",
+    "query": "Summarize production guardrails for LLM agents",
+    "route_history": [],
+    "errors": [],
+    "trace": [
+      {
+        "name": "baseline.complete",
+        "payload": {
+          "latency_seconds": 6.9365242999992915,
+          "input_tokens": 44,
+          "output_tokens": 563,
+          "cost_usd": 0.00034439999999999997,
+          "model": "gpt-4o-mini"
+        }
+      }
+    ]
+  },
+  {
+    "run_name": "multi-agent-q3",
+    "query": "Summarize production guardrails for LLM agents",
+    "route_history": [
+      "researcher",
+      "analyst",
+      "writer",
+      "done"
+    ],
+    "errors": [],
+    "trace": [
+      {
+        "name": "supervisor.route",
+        "payload": {
+          "route": "researcher",
+          "iteration": 1,
+          "duration_seconds": null
+        }
+      },
+      {
+        "name": "researcher.run",
+        "payload": {
+          "sources": 5,
+          "input_tokens": 671,
+          "output_tokens": 578,
+          "cost_usd": 0.00044744999999999995,
+          "duration_seconds": 10.303747099998873
+        }
+      },
+      {
+        "name": "supervisor.route",
+        "payload": {
+          "route": "analyst",
+          "iteration": 2,
+          "duration_seconds": null
+        }
+      },
+      {
+        "name": "analyst.run",
+        "payload": {
+          "input_tokens": 626,
+          "output_tokens": 549,
+          "cost_usd": 0.0004233,
+          "duration_seconds": 6.6091651000024285
+        }
+      },
+      {
+        "name": "supervisor.route",
+        "payload": {
+          "route": "writer",
+          "iteration": 3,
+          "duration_seconds": null
+        }
+      },
+      {
+        "name": "writer.run",
+        "payload": {
+          "input_tokens": 784,
+          "output_tokens": 942,
+          "cost_usd": 0.0006828,
+          "duration_seconds": 15.509053199995833
+        }
+      },
+      {
+        "name": "supervisor.route",
+        "payload": {
+          "route": "done",
+          "iteration": 4,
+          "duration_seconds": null
+        }
+      }
+    ]
+  }
+]
